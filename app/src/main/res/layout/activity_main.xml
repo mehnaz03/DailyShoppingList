@@ -45,6 +45,11 @@
         android:id="@+id/etPassword"
         android:textColorHint="@color/dot_light_screen1"
         android:background="@drawable/rounded_gray"/>
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/progress_circular"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -59,6 +64,6 @@
         android:gravity="center_horizontal"
         android:text="Don't have account? Sign Up here"
         android:textColor="@color/colorWhite"
-        android:id="@+id/tvSignup"
+        android:id="@+id/tvSignUp"
     />
 </LinearLayout>

@@ -1,9 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegistrationActivity">
+    tools:context=".RegistrationActivity"
+    android:orientation="vertical"
+    android:background="@drawable/background2">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Registration"
+            android:textColor="@color/dot_light_screen1"
+            android:textSize="@dimen/_20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_220sdp"/>
+        <EditText
+            android:id="@+id/etNameRegistration"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:padding="@dimen/_15sdp"
+            android:hint="Full Name :"
+            android:textColor="@color/dot_light_screen1"
+            android:textColorHint="@color/dot_light_screen1"
+            android:textSize="@dimen/_16sp"
+            android:background="@drawable/rounded_gray"/>
+        <EditText
+            android:id="@+id/etRegistrationEmail"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:padding="@dimen/_15sdp"
+            android:hint="Email :"
+            android:textColor="@color/dot_light_screen1"
+            android:textColorHint="@color/dot_light_screen1"
+            android:textSize="@dimen/_16sp"
+            android:background="@drawable/rounded_gray"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/dot_dark_screen1"
+            android:textSize="@dimen/_16sp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:hint="Password :"
+            android:padding="@dimen/_15sdp"
+            android:id="@+id/etPasswordRegistration"
+            android:textColorHint="@color/dot_light_screen1"
+            android:background="@drawable/rounded_gray"/>
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:id="@+id/progress_circular"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/rounded_pink"
+            android:text="Submit"
+            android:id="@+id/btnRegistration"
+            android:textColor="@color/colorWhite"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Already have account? Log In here"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/tvLogin"
+            />
+    </LinearLayout>
+</ScrollView>
+
+</LinearLayout>
