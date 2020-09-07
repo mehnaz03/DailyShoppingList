@@ -6,15 +6,59 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical"
-    android:background="@drawable/background">
+    android:background="@drawable/background2">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
         android:text="LOG IN"
-        android:gravity="center"
-        android:layout_marginTop="100dp"
-        android:textColor="@color/colorPrimary"
-        />
+        android:textColor="@color/dot_light_screen1"
+        android:textSize="@dimen/_20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_220sdp"/>
 
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:padding="@dimen/_15sdp"
+        android:hint="Name"
+        android:textColor="@color/dot_light_screen1"
+        android:textColorHint="@color/dot_light_screen1"
+        android:textSize="@dimen/_16sp"
+        android:background="@drawable/rounded_gray"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/dot_dark_screen1"
+        android:textSize="@dimen/_16sp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:hint="Password"
+        android:padding="@dimen/_15sdp"
+        android:id="@+id/etPassword"
+        android:textColorHint="@color/dot_light_screen1"
+        android:background="@drawable/rounded_gray"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/rounded_pink"
+        android:text="LOg In"
+        android:id="@+id/btnLogIn"
+        android:textColor="@color/colorWhite"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Don't have account? Sign Up here"
+        android:textColor="@color/colorWhite"
+        android:id="@+id/tvSignup"
+    />
 </LinearLayout>
