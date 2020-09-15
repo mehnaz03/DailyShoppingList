@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/dot_light_screen1"
+    android:background="@color/dot_light_screen4"
     app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
-</Toolbar>
+</androidx.appcompat.widget.Toolbar>

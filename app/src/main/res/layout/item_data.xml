@@ -24,7 +24,7 @@
                 android:text="9 Sep,2020"
                 android:textAppearance="?android:textAppearanceSmall"
                 android:layout_marginBottom="@dimen/_10sdp"
-                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_20sdp"
                 android:layout_marginEnd="@dimen/_10sdp"
                 android:id="@+id/tvDate"
                 android:textColor="@color/colorPink"
